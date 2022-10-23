@@ -1,12 +1,19 @@
-import "./App.css";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function App() {
+function CubeBlack() {
+  const href = window.location.href;
+  const [path, setPath] = useState("black");
+  useEffect(() => {
+    if (href === "http://localhost:3001/black") {
+      setPath("");
+    }
+  }, [href]);
   return (
     <div className="App">
       <div className="product__img-wrapper">
         <img
-          src="https://img.freepik.com/premium-vector/white-cube-square-box-illustration_275806-771.jpg"
+          src="https://img.freepik.com/premium-vector/realistic-black-cube-or-box-isolated_1085-2058.jpg"
           alt="white cube"
         ></img>
       </div>
@@ -15,7 +22,7 @@ function App() {
         <span>$299.00 USD</span>
         <p>color</p>
         <div className="product__colors">
-          <Link to="black">
+          <Link to={`${path}`}>
             <span className="product__black-link" />
           </Link>
           <Link to="/">
@@ -27,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default CubeBlack;
