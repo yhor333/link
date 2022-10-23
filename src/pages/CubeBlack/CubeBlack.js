@@ -18,7 +18,7 @@ function CubeBlack() {
         ></img>
       </div>
       <div className="product__info">
-        <h1>White cube</h1>
+        <h1>Black cube</h1>
         <span>$299.00 USD</span>
         <p>color</p>
         <div className="product__colors">

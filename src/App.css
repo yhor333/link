@@ -27,6 +27,7 @@
 
 .product__colors {
   display: flex;
+  padding-left: 40px;
 }
 
 .product__black-link::after {
