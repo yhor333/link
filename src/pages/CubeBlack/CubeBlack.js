@@ -5,7 +5,7 @@ function CubeBlack() {
   const href = window.location.href;
   const [path, setPath] = useState("black");
   useEffect(() => {
-    if (href === "http://localhost:3000/black") {
+    if (href === "https://yhor333.github.io/link/black") {
       setPath("");
     }
   }, [href]);
