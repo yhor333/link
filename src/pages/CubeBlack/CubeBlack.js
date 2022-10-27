@@ -5,7 +5,7 @@ function CubeBlack() {
   const href = window.location.href;
   const [path, setPath] = useState("black");
   useEffect(() => {
-    if (href === "https://yhor333.github.io/link/black") {
+    if (href === "https://boisterous-frangollo-e190b5.netlify.app/black") {
       setPath("");
     }
   }, [href]);
